@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.1.1
+    Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>#4 | pythonchallenge</title>
+<meta name="generator" content="Jekyll v3.8.3" />
+<meta property="og:title" content="#4" />
+<meta name="author" content="StevenPZChan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="继续挑战" />
+<meta property="og:description" content="继续挑战" />
+<link rel="canonical" href="http://localhost:4000/pythonchallenge/python/4_linkedlist" />
+<meta property="og:url" content="http://localhost:4000/pythonchallenge/python/4_linkedlist" />
+<meta property="og:site_name" content="pythonchallenge" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-08-22T00:00:00+08:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"#4","dateModified":"2018-08-22T10:40:00+08:00","url":"http://localhost:4000/pythonchallenge/python/4_linkedlist","datePublished":"2018-08-22T00:00:00+08:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/pythonchallenge/images/so-simple-site-logo.png"},"name":"StevenPZChan"},"author":{"@type":"Person","name":"StevenPZChan"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pythonchallenge/python/4_linkedlist"},"description":"继续挑战","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/pythonchallenge/assets/css/main.css">
+  <link rel="alternate" type="application/atom+xml" title="pythonchallenge" href="/pythonchallenge/atom.xml">
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--post  4">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">Menu</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul><li><a href="/pythonchallenge/">Home</a></li><li><a href="/pythonchallenge/categories">Categories</a></li><li><a href="/pythonchallenge/tags">Tags</a></li><li><a href="https://stevenpzchan.github.io/about">About</a></li></ul>
+    </nav>
+  </div><!-- /.navigation-wrapper -->
+
+
+    <header class="masthead">
+  <div class="wrap">
+    
+      <a href="/pythonchallenge/" class="site-logo" rel="home" title="pythonchallenge">
+        <img src="/pythonchallenge/images/so-simple-site-logo.png" class="site-logo-img animated fadeInDown" alt="pythonchallenge">
+      </a>
+    
+    
+      <h1 class="site-title animated fadeIn"><a href="/pythonchallenge/">pythonchallenge</a></h1>
+      <p class="site-description animated fadeIn" itemprop="description">Challenges on pythonchallenge.com</p>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title p-name">#4
+</h1>
+        
+      </header>
+
+      <div class="page-sidebar">
+        <div class="page-author h-card p-author"><img src="/pythonchallenge/images/image-alignment-150x150.jpg" class="author-avatar u-photo" alt="StevenPZChan"><div class="author-info"><div class="author-name">
+        <span class="p-name">StevenPZChan</span>
+      </div><ul class="author-links"><li class="author-link">
+            <a class="u-url" rel="me" href="https://github.com/StevenPZChan"><i class="fab fa-github-square fa-lg" title="GitHub"></i></a>
+          </li></ul>
+
+<span class="read-time">~1 min read</span>
+
+    <time class="page-date dt-published" datetime="2018-08-22T00:00:00+08:00"><a class="u-url" href="">August 22, 2018</a>
+</time>
+
+  </div>
+</div>
+
+        
+  <h3 class="page-taxonomies-title">Categories</h3>
+  <ul class="page-taxonomies"><li class="page-taxonomy"><a class="p-category" href="/pythonchallenge/categories/#python" title="Pages filed under python">python</a></li>
+  </ul>
+
+
+        
+  <h3 class="page-taxonomies-title">Tags</h3>
+  <ul class="page-taxonomies"><li class="page-taxonomy"><a href="/pythonchallenge/tags/#python" title="Pages tagged python" rel="tag">python</a></li><li class="page-taxonomy"><a href="/pythonchallenge/tags/#challenge" title="Pages tagged challenge" rel="tag">challenge</a></li>
+  </ul>
+
+
+      </div>
+
+      <div class="page-content">
+        <div class="e-content">
+          <p>继续挑战</p>
+
+<hr />
+<h3 id="第4题地址linkedlistphp">第4题地址<a href="http://www.pythonchallenge.com/pc/def/linkedlist.php">linkedlist.php</a></h3>
+<ul>
+  <li><img src="http://www.pythonchallenge.com/pc/def/chainsaw.jpg" alt="chainsaw.jpg" width="30%" height="30%" /></li>
+  <li>网页标题是<code class="highlighter-rouge">follow the chain</code></li>
+  <li>图片是小人锯东西❓❓❓</li>
+</ul>
+
+<p>惯例打开网页源码<a href="view-source:http://www.pythonchallenge.com/pc/def/linkedlist.php">view-source</a>，发现注释文字：</p>
+<blockquote>
+  <p>urllib may help. DON’T TRY ALL NOTHINGS, since it will never end. 400 times is more than enough.</p>
+</blockquote>
+
+<p>分析一下这段话的意思。首先提示<code class="highlighter-rouge">urllib</code>会对我们有帮助，还说400次足够了，还有<code class="highlighter-rouge">NOTHINGS</code>是个什么东西，为什么要试400次？<br />
+在愁眉莫展的时候发现源码里面还有一个超链接，原来点击图片是会链接到一个页面<a href="http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=12345">nothing=12345</a>的<br /></p>
+<blockquote>
+  <p>and the next nothing is 44827</p>
+</blockquote>
+
+<p>这样的话，<code class="highlighter-rouge">nothing</code>是个什么东西，还有为什么400次就很明了了。</p>
+
+<blockquote>
+  <h4 id="这里简单说下网页中的意思">这里简单说下网页中<code class="highlighter-rouge">?</code>的意思：<br /></h4>
+  <p><code class="highlighter-rouge">?</code>表示<code class="highlighter-rouge">GET</code>方法，后面用<code class="highlighter-rouge">key1=value1&amp;key2=value2[&amp;...]</code>的方式传递参数<br />
+然后后台使用php（本题）、asp、js得方式来进行处理并返回<code class="highlighter-rouge">GET</code>结果</p>
+</blockquote>
+
+<p>就不废话了，我们先试个400次，不过我们用<code class="highlighter-rouge">requests</code>不用<code class="highlighter-rouge">urllib</code>，因为前者要好用一些：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing='</span>
+<span class="n">nothing</span> <span class="o">=</span> <span class="s">'12345'</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">400</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span> <span class="o">+</span> <span class="n">nothing</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s">r'next nothing is (\d+)'</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'nothing ='</span><span class="p">,</span> <span class="n">nothing</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="n">nothing</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nothing = 16044
+Yes. Divide by two and keep going.
+</code></pre></div></div>
+
+<p>有意思的是，在第二次的时候会提示<code class="highlighter-rouge">Your hands are getting tired</code>，正好说明了不建议手工操作:D<br />
+在若干次之后停了下来，显示</p>
+<blockquote>
+  <p>Divide by two and keep going.</p>
+</blockquote>
+
+<p>也很好理解，我们继续。</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing='</span>
+<span class="n">nothing</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">16044</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">400</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span> <span class="o">+</span> <span class="n">nothing</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s">r'next nothing is (\d+)'</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'nothing ='</span><span class="p">,</span> <span class="n">nothing</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="n">nothing</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nothing = 66831
+peak.html
+</code></pre></div></div>
+
+<p>若干次之后也停了下来（中间出现了一次<code class="highlighter-rouge">There maybe misleading numbers in the text. One example is 82683. Look only for the next nothing and the next nothing is 63579</code>，说明不能光区配数字来取结果，不然就是
+<a href="http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=82683">nothing=82683</a>：
+<code class="highlighter-rouge">You've been misleaded to here. Go to previous one and check.</code>）。<br />
+看一下结果，是<a href="http://www.pythonchallenge.com/pc/def/peak.html"><code class="highlighter-rouge">peak.html</code></a>，打开之后到了下一题！</p>
+
+<h3 id="总结这一题体会到了使用获取到的数据分析后继续获取数据的用法用代码来实现也是十分爽快了">总结：这一题体会到了使用获取到的数据分析后继续获取数据的用法，用代码来实现也是十分爽快了。</h3>
+<h6 id="本题代码地址4_linkedlistipynb">本题代码地址<a href="https://github.com/StevenPZChan/pythonchallenge/blob/notebook/nbfiles/4_linkedlist.ipynb">4_linkedlist.ipynb</a></h6>
+
+        </div>
+
+        
+          <div class="page-share">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fpythonchallenge%2Fpython%2F4_linkedlist" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>Share</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%234%20http%3A%2F%2Flocalhost%3A4000%2Fpythonchallenge%2Fpython%2F4_linkedlist" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fpythonchallenge%2Fpython%2F4_linkedlist" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
+  <a href="https://reddit.com/submit?title=%234&url=http%3A%2F%2Flocalhost%3A4000%2Fpythonchallenge%2Fpython%2F4_linkedlist" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
+</div>
+
+        
+
+<!-- Gitalk 评论 start  -->
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+		clientID: 'af32d761f04c3c90df20',
+		clientSecret: '898ba9f4f70488fe002a194b91111ef0578b8729',
+		repo: 'stevenpzchan.github.io',
+		owner: 'StevenPZChan',
+		admin: ['StevenPZChan'],
+		id: '#4',
+        distractionFreeMode: true,
+    
+    });
+    gitalk.render('gitalk-container');
+</script> 
+<!-- Gitalk end -->
+
+        
+
+        <nav class="page-pagination" role="navigation">
+  
+    <a class="page-previous" href="/pythonchallenge/python/3_equality">
+      <h4 class="page-pagination-label">Previous</h4>
+      <span class="page-pagination-title">
+        <i class="fas fa-arrow-left"></i> #3
+
+      </span>
+    </a>
+  
+
+  
+    <a class="page-next" href="/pythonchallenge/python/5_peak">
+      <h4 class="page-pagination-label">Next</h4>
+      <span class="page-pagination-title">
+        #5
+ <i class="fas fa-arrow-right"></i>
+      </span>
+    </a>
+  
+</nav>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="social-icons"><a class="social-icon" href="https://github.com/StevenPZChan"><i class="fab fa-github-square fa-2x" title="GitHub"></i></a><a class="social-icon" href="/pythonchallenge/atom.xml"><i class="fas fa-rss-square fa-2x" title="Feed"></i></a><a class="social-icon" href="mailto:StevenPZChan@gmail.com"><i class="fas fa-link fa-2x" title="Contact"></i></a></div><div class="copyright">
+    
+      <p>This site is made by StevenPZChan.</p>
+
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/pythonchallenge/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </body>
+
+</html>

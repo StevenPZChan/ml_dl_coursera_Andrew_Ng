@@ -1,0 +1,88 @@
+# remote_theme: "mmistakes/so-simple-theme"
+
+locale: zh-CN
+title: ml_dl_coursera_Andrew_Ng
+description: Exercises for machine learning and deep learning lessons on Coursera by Andrew Ng
+baseurl: /ml_dl_coursera_Andrew_Ng
+url: https://stevenpzchan.github.io
+logo: /images/so-simple-site-logo.png
+
+date_format: "%B %-d, %Y"
+read_time: true
+words_per_minute: 200
+mathjax: true
+
+google_analytics:
+
+# Liquid
+liquid:
+  error_mode: strict
+  
+# Build settings
+permalink: /:categories/:title
+markdown: kramdown
+feed:
+  path: atom.xml
+  
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 10
+paginate_path: /page:num/
+
+# Search
+search: false
+search_full_content: false
+
+# Taxonomy pages
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+# Front Matter Defaults
+defaults:
+  # Posts defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      share: true
+
+# Site Author
+author:
+  name: StevenPZChan
+  picture: images/image-alignment-150x150.jpg
+  email: StevenPZChan@gmail.com
+  twitter:
+  links:
+    - title: GitHub
+      url: https://github.com/StevenPZChan
+      icon: fab fa-github-square
+
+# Footer Links
+footer_links:
+  - title: GitHub
+    url: https://github.com/StevenPZChan
+    icon: fab fa-github-square
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square
+  - title: Contact
+    url: mailto:StevenPZChan@gmail.com
+copyright: This site is made by StevenPZChan.
