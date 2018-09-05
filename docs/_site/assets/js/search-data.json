@@ -1,6 +1,0 @@
-var store = [{
-        "title": "machine-learning-ex1",
-        "excerpt":"Exercise 1: Linear Regression ==================== Part 1: Basic Function ==================== from ex1 import *print('Running warmUpExercise ... ')print('5x5 Identity Matrix: ')warmUpExercise()Running warmUpExercise ... 5x5 Identity Matrix: array([[1., 0., 0., 0., 0.], [0., 1., 0., 0., 0.], [0., 0., 1., 0., 0.], [0., 0., 0., 1., 0.], [0., 0., 0., 0., 1.]])=======================...","categories": ["python"],
-        "tags": ["python","machine-learning"],
-        "url": "http://localhost:4000/ml_dl_coursera_Andrew_Ng/python/machine-learning-ex1"
-      }]
