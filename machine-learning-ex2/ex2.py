@@ -3,6 +3,7 @@ from matplotlib import pyplot as plt
 
 np.set_printoptions(precision=6)
 
+
 def plotData(X, y):
     """Plots the data points X and y into a new figure
 
@@ -29,6 +30,7 @@ def sigmoid(z):
     g = np.frompyfunc(lambda x: 1 / (1 + np.exp(-x)), 1, 1)
     return g(z).astype(z.dtype)
 
+
 def costFunction(theta, X, y):
     """Compute cost and gradient for logistic regression
 
@@ -41,14 +43,13 @@ def costFunction(theta, X, y):
     :return:
     """
     # Initialize some useful values
-    m = len(y) # number of training examples
+    m = len(y)  # number of training examples
 
     h_theta = sigmoid(np.matmul(X, theta))
     ones = np.ones(m)
     J = -1 / m * (np.matmul(y, np.log(h_theta)) + np.matmul(ones - y, np.log(ones - h_theta)))
     grad = 1 / m * np.matmul(X.transpose(), h_theta - y)
     return J, grad
-
 
 
 def mapFeature(X1, X2):
@@ -69,7 +70,6 @@ def mapFeature(X1, X2):
     return out
 
 
-
 def plotDecisionBoundary(theta, X, y):
     """Plots the data points X and y into a new figure with
     the decision boundary defined by theta
@@ -88,7 +88,7 @@ def plotDecisionBoundary(theta, X, y):
     plotData(X[:, 1:], y)
     if X.shape[1] <= 3:
         # Only need 2 points to define a line, so choose two endpoints
-        plot_x = np.array([min(X[:, 1])-2, max(X[:, 1])+2])
+        plot_x = np.array([min(X[:, 1]) - 2, max(X[:, 1]) + 2])
 
         # Calculate the decision boundary line
         plot_y = -1 / theta[2] * (theta[1] * plot_x + theta[0])
@@ -118,6 +118,7 @@ def plotDecisionBoundary(theta, X, y):
         cs = plt.contour(u, v, z.transpose(), [0], linewidth=2, colors='green')
         cs.collections[0].set_label('')
 
+
 def predict(theta, X):
     """Predict whether the label is 0 or 1 using learned logistic
     regression parameters theta
@@ -130,6 +131,7 @@ def predict(theta, X):
     """
     p = sigmoid(np.matmul(X, theta)) >= 0.5
     return p.astype(np.int)
+
 
 def costFunctionReg(theta, X, y, _lambda):
     """Compute cost and gradient for logistic regression with regularization
@@ -144,7 +146,7 @@ def costFunctionReg(theta, X, y, _lambda):
     :return:
     """
     # Initialize some useful values
-    m = len(y) # number of training examples
+    m = len(y)  # number of training examples
     J, grad = costFunction(theta, X, y)
     J += _lambda / (2 * m) * np.matmul(theta[1:], theta[1:])
     grad[1:] += _lambda / m * theta[1:]
