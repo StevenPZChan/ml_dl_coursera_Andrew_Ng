@@ -39,7 +39,7 @@ def computeCostMulti(X, y, theta):
     # Initialize some useful values
     m = len(y)  # number of training examples
     diff = np.matmul(X, theta) - y
-    J = 1 / (2 * m) * np.asscalar(np.matmul(diff.transpose(), diff))
+    J = 1 / (2 * m) * np.matmul(diff, diff)
     return J
 
 

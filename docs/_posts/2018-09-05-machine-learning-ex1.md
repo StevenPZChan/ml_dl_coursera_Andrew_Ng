@@ -5,7 +5,7 @@ categories: python
 tags:
   - python
   - machine-learning
-last_modified_at: 2018-09-05T17:40:00+08:00
+last_modified_at: 2018-09-07T14:40:00+08:00
 ---
 ## Exercise 1: Linear Regression
 ### ==================== Part 1: Basic Function ====================
@@ -45,7 +45,7 @@ y = data.iloc[:, 1]
 m = len(y) # number of training examples
 
 # Plot Data
-plotData(X, y)
+plotData(np.array(X), np.array(y))
 ```
 
     Plotting Data ...
@@ -63,8 +63,8 @@ plotData(X, y)
 X = pd.DataFrame(data.iloc[:, 0])
 X.insert(0, None, 1) # Add a column of ones to x
 X = np.array(X)
-y = np.array(pd.DataFrame(data.iloc[:, 1]))
-theta = np.zeros((2, 1)) # initialize fitting parameters
+y = np.array(y)
+theta = np.zeros(2) # initialize fitting parameters
 
 # Some gradient descent settings
 iterations = 1500
@@ -73,22 +73,22 @@ alpha = 0.01
 print('Testing the cost function ...')
 # compute and display initial cost
 J = computeCost(X, y, theta)
-print(f'With theta = [0 ; 0]\nCost computed = {J}')
+print(f'With theta = [0 ; 0]\nCost computed = {J:f}')
 print('Expected cost value (approx) 32.07')
 
 # further testing of the cost function
-J = computeCost(X, y, np.array([[-1], [2]]))
-print(f'\nWith theta = [-1 ; 2]\nCost computed = {J}')
+J = computeCost(X, y, np.array([-1, 2]))
+print(f'\nWith theta = [-1 ; 2]\nCost computed = {J:f}')
 print('Expected cost value (approx) 54.24')
 ```
 
     Testing the cost function ...
     With theta = [0 ; 0]
-    Cost computed = 32.072733877455676
+    Cost computed = 32.072734
     Expected cost value (approx) 32.07
     
     With theta = [-1 ; 2]
-    Cost computed = 54.24245508201238
+    Cost computed = 54.242455
     Expected cost value (approx) 54.24
     
 
@@ -113,15 +113,14 @@ plt.show() # don't overlay any more plots on this figure
 
 # Predict values for population sizes of 35,000 and 70,000
 predict1 = np.matmul(np.array([1, 3.5]), theta)
-print(f'For population = 35,000, we predict a profit of {predict1*10000}')
+print(f'For population = 35,000, we predict a profit of {predict1*10000:f}')
 predict2 = np.matmul(np.array([1, 7]), theta)
-print(f'For population = 70,000, we predict a profit of {predict2*10000}')
+print(f'For population = 70,000, we predict a profit of {predict2*10000:f}')
 ```
 
     Running Gradient Descent ...
     Theta found by gradient descent:
-    [[-3.630291]
-     [ 1.166362]]
+    [-3.630291  1.166362]
     Expected theta values (approx)
      -3.6303
       1.1664
@@ -132,11 +131,11 @@ print(f'For population = 70,000, we predict a profit of {predict2*10000}')
 ![png](../images/machine-learning-ex1_files/machine-learning-ex1_7_1.png)
 
 
-    For population = 35,000, we predict a profit of [4519.767868]
-    For population = 70,000, we predict a profit of [45342.450129]
+    For population = 35,000, we predict a profit of 4519.767868
+    For population = 70,000, we predict a profit of 45342.450129
     
 
-### ============= Part 4: Visualizing J($\theta_0$, $\theta_1$) =============
+### ============= Part 4: Visualizing J($$\theta_0$$, $$\theta_1$$) =============
 
 
 ```python
@@ -152,7 +151,7 @@ J_vals = np.zeros((len(theta0_vals), len(theta1_vals)));
 # Fill out J_vals
 for i in range(len(theta0_vals)):
     for j in range(len(theta1_vals)):
-        t = np.array([[theta0_vals[i]], [theta1_vals[j]]])
+        t = np.array([theta0_vals[i], theta1_vals[j]])
         J_vals[i, j] = computeCost(X, y, t)
 
 # Because of the way meshgrids work in the surf command, we need to
@@ -163,7 +162,7 @@ J_vals = J_vals.transpose()
 from mpl_toolkits.mplot3d import Axes3D
 ax = Axes3D(plt.figure())
 ax.view_init(azim=-120)
-ax.plot_surface(theta0_vals, theta1_vals, J_vals)
+ax.plot_surface(theta0_vals, theta1_vals, J_vals, cmap='rainbow')
 plt.xlabel(r'$\theta_0$')
 plt.ylabel(r'$\theta_1$')
 plt.show()
@@ -250,8 +249,8 @@ num_iters = 400
 
 # Init Theta and Run Gradient Descent 
 X = np.array(X)
-y = np.array(pd.DataFrame(y))
-theta = np.zeros((3, 1))
+y = np.array(y)
+theta = np.zeros(3)
 theta, J_history = gradientDescentMulti(X, y, theta, alpha, num_iters)
 
 # Plot the convergence graph
@@ -274,9 +273,7 @@ print(f' {theta} ');
 
 
     Theta computed from gradient descent: 
-     [[334302.063993]
-     [ 99411.449474]
-     [  3267.012854]] 
+     [334302.063993  99411.449474   3267.012854] 
     
 
 ### Selecting learning rates
@@ -286,12 +283,12 @@ print(f' {theta} ');
 learning_rates = sorted(np.hstack((np.logspace(-4, -1, 4), 3 * np.logspace(-4, -1, 4))))
 num_iters = 500
 for alpha in learning_rates:
-    theta = np.zeros((3, 1))
+    theta = np.zeros(3)
     theta, J_history = gradientDescentMulti(X, y, theta, alpha, num_iters)
     plt.plot(np.arange(num_iters), J_history, '-', LineWidth=2)
 plt.xlabel('Number of iterations')
 plt.ylabel('Cost J')
-plt.legend([f'{x:f}' for x in learning_rates])
+plt.legend([f'{x:.6g}' for x in learning_rates], loc='right')
 plt.show()
 ```
 
@@ -307,13 +304,13 @@ num_iters = 400
 
 # Init Theta and Run Gradient Descent 
 X = np.array(X)
-y = np.array(pd.DataFrame(y))
-theta = np.zeros((3, 1))
+y = np.array(y)
+theta = np.zeros(3)
 theta, J_history = gradientDescentMulti(X, y, theta, alpha, num_iters)
 
 # Estimate the price of a 1650 sq-ft, 3 br house
-house = np.array([[1], [(1650 - mu[0]) / sigma[0]], [(3 - mu[1]) / sigma[1]]])
-price = np.asscalar(np.matmul(theta.transpose(), house))
+house = np.array([1, (1650 - mu[0]) / sigma[0], (3 - mu[1]) / sigma[1]])
+price = np.matmul(theta, house)
 
 
 # ============================================================
@@ -341,7 +338,7 @@ X.insert(0, None, 1)
 
 # Calculate the parameters from the normal equation
 X = np.array(X)
-y = np.array(pd.DataFrame(y))
+y = np.array(y)
 theta = normalEqn(X, y)
 
 # Display normal equation's result
@@ -350,22 +347,20 @@ print(f' {theta} \n')
 
 
 # Estimate the price of a 1650 sq-ft, 3 br house
-house = np.array([[1], [1650], [3]])
-price = np.asscalar(np.matmul(theta.transpose(), house))
+house = np.array([1, 1650, 3])
+price = np.matmul(theta, house)
 
 
 # ============================================================
 
-print(f'Predicted price of a 1650 sq-ft, 3 br house (using normal equations):\n {price:f}')
+print(f'Predicted price of a 1650 sq-ft, 3 br house (using normal equations):\n ${price:f}')
 ```
 
     Theta computed from the normal equations: 
-     [[89597.909543]
-     [  139.210674]
-     [-8738.019112]] 
+     [89597.909543   139.210674 -8738.019112] 
     
     Predicted price of a 1650 sq-ft, 3 br house (using normal equations):
-     293081.464335
+     $293081.464335
     
 
 两种方法的预测结果还是比较相近的。
