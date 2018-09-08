@@ -133,7 +133,7 @@ def predict(theta, X):
     return p.astype(np.int)
 
 
-def costFunctionReg(theta, X, y, _lambda):
+def costFunctionReg(theta, X, y, lambda_):
     """Compute cost and gradient for logistic regression with regularization
 
     J = costFunctionReg(theta, X, y, lambda) computes the cost of using
@@ -142,12 +142,12 @@ def costFunctionReg(theta, X, y, _lambda):
     :param theta:
     :param X:
     :param y:
-    :param _lambda:
+    :param lambda_:
     :return:
     """
     # Initialize some useful values
     m = len(y)  # number of training examples
     J, grad = costFunction(theta, X, y)
-    J += _lambda / (2 * m) * np.matmul(theta[1:], theta[1:])
-    grad[1:] += _lambda / m * theta[1:]
+    J += lambda_ / (2 * m) * np.matmul(theta[1:], theta[1:])
+    grad[1:] += lambda_ / m * theta[1:]
     return J, grad

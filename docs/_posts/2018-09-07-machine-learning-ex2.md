@@ -231,11 +231,11 @@ X = mapFeature(X.iloc[:, 0], X.iloc[:, 1])
 initial_theta = np.zeros(X.shape[1])
 
 # Set regularization parameter lambda to 1
-_lambda = 1
+lambda_ = 1
 
 # Compute and display initial cost and gradient for regularized logistic
 # regression
-cost, grad = costFunctionReg(initial_theta, X, y, _lambda);
+cost, grad = costFunctionReg(initial_theta, X, y, lambda_);
 
 print(f'Cost at initial theta (zeros): {cost:f}')
 print('Expected cost (approx): 0.693')
@@ -288,22 +288,22 @@ print(' 0.3460\n 0.1614\n 0.1948\n 0.2269\n 0.0922')
 initial_theta = np.zeros(X.shape[1])
 
 # Set regularization parameter lambda to 1 (you should vary this)
-_lambda = 1;
+lambda_ = 1;
 
 # Set Options
-fun = lambda t, X, y, _lambda: costFunctionReg(t, X, y, _lambda)[0]
-jac = lambda t, X, y, _lambda: costFunctionReg(t, X, y, _lambda)[1]
+fun = lambda t, X, y, lambda_: costFunctionReg(t, X, y, lambda_)[0]
+jac = lambda t, X, y, lambda_: costFunctionReg(t, X, y, lambda_)[1]
 options = {'disp': True, 'maxiter': 400}
 
 # Optimize
-res = opt.minimize(fun, initial_theta, args=(X, y, _lambda), jac=jac, options=options)
+res = opt.minimize(fun, initial_theta, args=(X, y, lambda_), jac=jac, options=options)
 theta = res.x
 J = res.fun
 exit_flag = res.status
 
 # Plot Boundary
 plotDecisionBoundary(theta, X, y);
-plt.title(f'$\lambda$ = {_lambda:g}')
+plt.title(f'$\lambda$ = {lambda_:g}')
 
 # Labels and Legend
 plt.xlabel('Microchip Test 1')
@@ -341,16 +341,16 @@ print('Expected accuracy (with lambda = 1): 83.1 (approx)')
 # Plot Data
 plotData(X[:, 1:], y)
 # Set Options
-fun = lambda t, X, y, _lambda: costFunctionReg(t, X, y, _lambda)[0]
-jac = lambda t, X, y, _lambda: costFunctionReg(t, X, y, _lambda)[1]
+fun = lambda t, X, y, lambda_: costFunctionReg(t, X, y, lambda_)[0]
+jac = lambda t, X, y, lambda_: costFunctionReg(t, X, y, lambda_)[1]
 options = {'disp': True, 'maxiter': 400}
 lambdas = [0, 1, 10, 100]
 colors = ['red', 'green', 'blue', 'yellow']
-for _lambda, color in zip(lambdas, colors):
+for lambda_, color in zip(lambdas, colors):
     # Initialize fitting parameters
     initial_theta = np.zeros(X.shape[1])
     # Optimize
-    res = opt.minimize(fun, initial_theta, args=(X, y, _lambda), jac=jac, options=options)
+    res = opt.minimize(fun, initial_theta, args=(X, y, lambda_), jac=jac, options=options)
     theta = res.x
     J = res.fun
     exit_flag = res.status
