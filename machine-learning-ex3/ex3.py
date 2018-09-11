@@ -140,13 +140,13 @@ def oneVsAll(X, y, num_labels, lambda_):
     initial_theta = np.zeros(n + 1)
 
     # Set options for fminunc
-    fun = lambda theta, X, y, lambda_: lrCostFunction(theta, X, y, lambda_)[0]
-    jac = lambda theta, X, y, lambda_: lrCostFunction(theta, X, y, lambda_)[1]
+    fun = lambda theta, y: lrCostFunction(theta, X, y, lambda_)[0]
+    jac = lambda theta, y: lrCostFunction(theta, X, y, lambda_)[1]
     options = {'disp': True, 'maxiter': 400}
 
     for c in range(num_labels):
         # Run fmincg to obtain the optimal theta
-        args = (X, (y == c + 1).astype(np.int), lambda_)
+        args = ((y == c + 1).astype(np.int),)
         res = opt.minimize(fun, initial_theta, args=args, method='CG', jac=jac, options=options)
         all_theta[c, :] = res.x
 

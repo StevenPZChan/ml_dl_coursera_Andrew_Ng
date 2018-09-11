@@ -285,16 +285,13 @@ options = {'maxiter': 400}
 lambda_ = 1;
 
 # Create "short hand" for the cost function to be minimized
-fun = lambda nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lambda_:\
-    nnCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lambda_)[0]
-jac = lambda nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lambda_:\
-    nnCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lambda_)[1]
+fun = lambda nn_params: nnCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lambda_)[0]
+jac = lambda nn_params: nnCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lambda_)[1]
 
 # Now, costFunction is a function that takes in only one argument (the
 # neural network parameters)
 from scipy import optimize as opt
-res = opt.minimize(fun, initial_nn_params, args=(input_layer_size, hidden_layer_size, num_labels, X, y, lambda_),
-                   method='CG', jac=jac, options=options)
+res = opt.minimize(fun, initial_nn_params, method='CG', jac=jac, options=options)
 nn_params = res.x
 cost = res.fun
 

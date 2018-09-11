@@ -106,9 +106,9 @@ print('Expected gradients (approx):\n 0.043\n 2.566\n 2.647')
 
 ```python
 #  Set options for fminunc
-fun = lambda t, X, y: costFunction(t, X, y)[0]
+fun = lambda t: costFunction(t, X, y)[0]
 x0 = np.zeros(n + 1)
-jac = lambda t, X, y: costFunction(t, X, y)[1]
+jac = lambda t: costFunction(t, X, y)[1]
 options = {'disp': True, 'maxiter': 400}
 
 #  Run fminunc to obtain the optimal theta
@@ -116,7 +116,7 @@ options = {'disp': True, 'maxiter': 400}
 from scipy import optimize as opt
 import warnings
 warnings.filterwarnings('ignore')
-res = opt.minimize(fun, x0, args=(X, y), jac=jac, options=options)
+res = opt.minimize(fun, x0, jac=jac, options=options)
 theta = res.x
 cost = res.fun
 
@@ -291,12 +291,12 @@ initial_theta = np.zeros(X.shape[1])
 lambda_ = 1;
 
 # Set Options
-fun = lambda t, X, y, lambda_: costFunctionReg(t, X, y, lambda_)[0]
-jac = lambda t, X, y, lambda_: costFunctionReg(t, X, y, lambda_)[1]
+fun = lambda t: costFunctionReg(t, X, y, lambda_)[0]
+jac = lambda t: costFunctionReg(t, X, y, lambda_)[1]
 options = {'disp': True, 'maxiter': 400}
 
 # Optimize
-res = opt.minimize(fun, initial_theta, args=(X, y, lambda_), jac=jac, options=options)
+res = opt.minimize(fun, initial_theta, jac=jac, options=options)
 theta = res.x
 J = res.fun
 exit_flag = res.status
@@ -341,8 +341,8 @@ print('Expected accuracy (with lambda = 1): 83.1 (approx)')
 # Plot Data
 plotData(X[:, 1:], y)
 # Set Options
-fun = lambda t, X, y, lambda_: costFunctionReg(t, X, y, lambda_)[0]
-jac = lambda t, X, y, lambda_: costFunctionReg(t, X, y, lambda_)[1]
+fun = lambda t, lambda_: costFunctionReg(t, X, y, lambda_)[0]
+jac = lambda t, lambda_: costFunctionReg(t, X, y, lambda_)[1]
 options = {'disp': True, 'maxiter': 400}
 lambdas = [0, 1, 10, 100]
 colors = ['red', 'green', 'blue', 'yellow']
@@ -350,7 +350,7 @@ for lambda_, color in zip(lambdas, colors):
     # Initialize fitting parameters
     initial_theta = np.zeros(X.shape[1])
     # Optimize
-    res = opt.minimize(fun, initial_theta, args=(X, y, lambda_), jac=jac, options=options)
+    res = opt.minimize(fun, initial_theta, args=(lambda_,), jac=jac, options=options)
     theta = res.x
     J = res.fun
     exit_flag = res.status
