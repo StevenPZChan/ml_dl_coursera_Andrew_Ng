@@ -218,7 +218,7 @@ plt.show()
 ![png](../images/machine-learning-ex7_files/machine-learning-ex7_9_1.png)
 
 
-###### 以上部分代码在[ex7.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-ex7/ex7.py)中
+###### 以上部分代码在[ex7.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex7/ex7.py)中
 
 ## Exercise 7 | Principle Component Analysis and K-Means Clustering
 ### ================== Part 1: Load Example Dataset  ===================
@@ -513,6 +513,6 @@ plt.show()
 ![png](../images/machine-learning-ex7_files/machine-learning-ex7_28_0.png)
 
 
-###### 以上部分代码在[ex7_pca.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-ex7/ex7_pca.py)中
+###### 以上部分代码在[ex7_pca.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex7/ex7_pca.py)中
 
 ### 总结：学会了`plt.cm.get_cmap`的用法，了解了`np.linalg.svd`的用法。

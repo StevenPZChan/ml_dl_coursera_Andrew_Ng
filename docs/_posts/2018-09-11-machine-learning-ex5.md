@@ -516,6 +516,6 @@ plt.show()
 
 
 用了随机采样平均值之后曲线平滑了不少。
-###### 以上部分代码在[ex5.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-ex5/ex5.py)中
+###### 以上部分代码在[ex5.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex5/ex5.py)中
 
 ### 总结：直观感受了偏差和方差的情况，以及对后续工作有了大概的印象。了解了`numpy`的广播原理。

@@ -189,7 +189,7 @@ visualizeBoundary(X, y, model)
 ![png](../images/machine-learning-ex6_files/machine-learning-ex6_13_0.png)
 
 
-###### 以上部分代码在[ex6.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-ex6/ex6.py)中
+###### 以上部分代码在[ex6.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex6/ex6.py)中
 
 ## Exercise 6 | Spam Classification with SVMs
 ### ==================== Part 1: Email Preprocessing ====================
@@ -420,7 +420,7 @@ for filename in filenames:
     (1 indicates spam, 0 indicates not spam)
     
 
-###### 以上部分代码在[ex6_spam.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-ex6/ex6_spam.py)中
+###### 以上部分代码在[ex6_spam.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex6/ex6_spam.py)中
 
 ### Todo: Build Your Own Dataset
 Data from http://spamassassin.apache.org/old/publiccorpus/

@@ -331,6 +331,6 @@ print(f'Training Set Accuracy: {(pred == y).mean() * 100:f}')
     Training Set Accuracy: 99.480000
     
 
-###### 以上部分代码在[ex4.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-ex4/ex4.py)中
+###### 以上部分代码在[ex4.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex4/ex4.py)中
 
 ### 总结：神经网络计算比较准确，但是好慢= =，还有可能是过拟合了。学习了反向传播的代码实现。
