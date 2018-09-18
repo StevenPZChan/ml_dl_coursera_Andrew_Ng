@@ -417,6 +417,6 @@ plt.show()
 
 可以看到当$$\lambda = 0$$时迭代还没有收敛，并且决策边界变得很扭曲，说明没有经过正则化时出现了过拟合；<br>
 而当$$\lambda = 100$$时迭代了7步就收敛了，这时的决策边界相当圆滑，但较多的数据点分类不正确（准确率仅有61%），说明正则化程度过高会导致欠拟合。
-###### 以上部分函数代码在[ex2.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-ex2/ex2.py)中
+###### 以上部分函数代码在[ex2.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex2/ex2.py)中
 
 ### 总结：`numpy`和`scipy`里面的数学工具还是挺多挺实用的。学会了`contour`的标注方法。

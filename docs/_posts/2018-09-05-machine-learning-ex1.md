@@ -187,7 +187,7 @@ plt.show()
 ![png](../images/machine-learning-ex1_files/machine-learning-ex1_9_2.png)
 
 
-###### 以上部分函数代码在[ex1.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-ex1/ex1.py)中
+###### 以上部分函数代码在[ex1.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex1/ex1.py)中
 
 ## Exercise 1: Linear regression with multiple variables
 ### ================ Part 1: Feature Normalization ================
@@ -364,5 +364,5 @@ print(f'Predicted price of a 1650 sq-ft, 3 br house (using normal equations):\n 
     
 
 两种方法的预测结果还是比较相近的。
-###### 以上部分函数代码在[ex1_multi.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-ex1/ex1_multi.py)中
+###### 以上部分函数代码在[ex1_multi.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex1/ex1_multi.py)中
 ### 总结：`pandas` `numpy` `matplotlib`这几个库结合起来用还是挺方便的，就是需要上手一阵子。

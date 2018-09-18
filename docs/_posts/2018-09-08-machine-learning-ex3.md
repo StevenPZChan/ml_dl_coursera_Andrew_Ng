@@ -153,7 +153,7 @@ print(f'Training Set Accuracy: {(pred == y).mean() * 100:f}')
     
 
 结果有点小误差，应该是$$\lambda$$取值问题。
-###### 以上部分代码在[ex3.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-ex3/ex3.py)中
+###### 以上部分代码在[ex3.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex3/ex3.py)中
 
 ## Exercise 3 | Part 2: Neural Networks
 ### =========== Part 1: Loading and Visualizing Data =============
