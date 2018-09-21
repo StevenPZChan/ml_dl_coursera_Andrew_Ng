@@ -67,8 +67,12 @@ print(nn_params.shape)
     (10285,)
     
 
-### ================ Part 3: Compute Cost (Feedforward) ================
-代价函数$$J(\theta) = -\frac{1}{m}\left[\sum_{i=1}^{m}\sum_{k=1}^{K}{y_k^{(i)}\log\left(h_\Theta(x^{(i)})_k\right) + (1 - y_k^{(i)})\log\left(1 - h_\Theta(x^{(i)})_k\right)}\right] + \frac{\lambda}{2m}\sum_{l=1}^{L-1}\sum_{i=1}^{s_l}\sum_{j=1}^{s_{l+1}}{\left(\Theta_{ji}^{(l)}\right)^2} = -\frac{1}{m}trace\left(y^T\log\left(h_\Theta(X)\right) + ({\bf1} - y)^T\log\left({\bf1} - h_\Theta(X)\right)\right) + \frac{\lambda}{2m}\sum_{l=1}^{L-1}\sum_{i=1}^{s_l}\sum_{j=1}^{s_{l+1}}{\left(\Theta_{ji}^{(l)}\right)^2}$$
+### ============= Part 3: Compute Cost (Feedforward) =============
+代价函数
+
+$$J(\theta) = -\frac{1}{m}\left[\sum_{i=1}^{m}\sum_{k=1}^{K}{y_k^{(i)}\log\left(h_\Theta(x^{(i)})_k\right) + (1 - y_k^{(i)})\log\left(1 - h_\Theta(x^{(i)})_k\right)}\right] + \frac{\lambda}{2m}\sum_{l=1}^{L-1}\sum_{i=1}^{s_l}\sum_{j=1}^{s_{l+1}}{\left(\Theta_{ji}^{(l)}\right)^2}$$
+
+$$ = -\frac{1}{m}trace\left(y^T\log\left(h_\Theta(X)\right) + ({\bf1} - y)^T\log\left({\bf1} - h_\Theta(X)\right)\right) + \frac{\lambda}{2m}\sum_{l=1}^{L-1}\sum_{i=1}^{s_l}\sum_{j=1}^{s_{l+1}}{\left(\Theta_{ji}^{(l)}\right)^2}$$
 
 
 ```python
@@ -87,7 +91,7 @@ print(f'Cost at parameters (loaded from ex4weights): {J:f} \n(this value should 
     (this value should be about 0.287629)
     
 
-### =============== Part 4: Implement Regularization ===============
+### ============== Part 4: Implement Regularization ==============
 
 
 ```python
@@ -107,7 +111,9 @@ print(f'Cost at parameters (loaded from ex4weights): {J:f} \n(this value should 
     
 
 ### ================ Part 5: Sigmoid Gradient  ================
+
 $$sigmoid(z) = g(z) = \frac{1}{1 + e^{-z}}$$
+
 $$g'(z) = \frac{d}{dz}g(z) = g(z)\left(1 - g(z)\right)$$
 
 
@@ -125,6 +131,7 @@ print(f'{g}')
     
 
 ### ================ Part 6: Initializing Pameters ================
+
 $$\epsilon_{init} = \frac{\sqrt{6}}{\sqrt{L_{in} + L_{out}}}$$
 
 
@@ -143,8 +150,11 @@ print(initial_nn_params[:5])
     [ 0.066709  0.088432  0.010104 -0.059409 -0.01829 ]
     
 
-### =============== Part 7: Implement Backpropagation ===============
-梯度计算$$\Delta_{ij}^{(l)} = \sum_m{a_j^{(l)}\delta_i^{(l+1)}}$$
+### ============= Part 7: Implement Backpropagation =============
+梯度计算
+
+$$\Delta_{ij}^{(l)} = \sum_m{a_j^{(l)}\delta_i^{(l+1)}}$$
+
 $$D^{(l)} = \frac{1}{m}\Delta^{(l)} + \frac{\lambda}{m}\Theta^{(l)}$$
 
 
@@ -200,10 +210,10 @@ checkNNGradients()
     If your backpropagation implementation is correct, then 
     the relative difference will be small (less than 1e-9). 
     
-    Relative Difference: 2.54723e-11
+    Relative Difference: 2.09633e-11
     
 
-### =============== Part 8: Implement Regularization ===============
+### ============== Part 8: Implement Regularization ==============
 
 
 ```python
@@ -265,7 +275,7 @@ print(f'\nCost at (fixed) debugging parameters (w/ lambda = {lambda_:f}): {debug
     If your backpropagation implementation is correct, then 
     the relative difference will be small (less than 1e-9). 
     
-    Relative Difference: 2.29394e-11
+    Relative Difference: 1.95725e-11
     
     Cost at (fixed) debugging parameters (w/ lambda = 3.000000): 0.576051 
     (for lambda = 3, this value should be about 0.576051)
@@ -319,7 +329,7 @@ _ = displayData(Theta1[:, 1:])
 ![png](../images/machine-learning-ex4_files/machine-learning-ex4_19_1.png)
 
 
-### ================= Part 10: Implement Predict =================
+### ================ Part 10: Implement Predict ================
 
 
 ```python

@@ -8,7 +8,7 @@ tags:
 last_modified_at: 2018-09-17T09:15:00+08:00
 ---
 ## Exercise 6 | Support Vector Machines
-### =============== Part 1: Loading and Visualizing Data ================
+### ============ Part 1: Loading and Visualizing Data =============
 
 
 ```python
@@ -34,8 +34,10 @@ plotData(X, y)
 ![png](../images/machine-learning-ex6_files/machine-learning-ex6_1_1.png)
 
 
-### ==================== Part 2: Training Linear SVM ====================
-线性核为$$k = X_i^TX_j$$
+### ================ Part 2: Training Linear SVM ================
+线性核为
+
+$$k = X_i^TX_j$$
 
 
 ```python
@@ -63,8 +65,10 @@ visualizeBoundaryLinear(X, y, model)
 ![png](../images/machine-learning-ex6_files/machine-learning-ex6_3_1.png)
 
 
-### =============== Part 3: Implementing Gaussian Kernel ===============
-高斯核为$$k = e^{-\frac{(X_i - X_j)^T(X_i - X_j)}{2\sigma^2}}$$
+### ============ Part 3: Implementing Gaussian Kernel ============
+高斯核为
+
+$$k = e^{-\frac{(X_i - X_j)^T(X_i - X_j)}{2\sigma^2}}$$
 
 
 ```python
@@ -108,7 +112,7 @@ plotData(X, y)
 ![png](../images/machine-learning-ex6_files/machine-learning-ex6_7_1.png)
 
 
-### ========== Part 5: Training SVM with RBF Kernel (Dataset 2) ==========
+### ======= Part 5: Training SVM with RBF Kernel (Dataset 2) =======
 
 
 ```python
@@ -164,7 +168,7 @@ plotData(X, y)
 ![png](../images/machine-learning-ex6_files/machine-learning-ex6_11_1.png)
 
 
-### ========== Part 7: Training SVM with RBF Kernel (Dataset 3) ==========
+### ======= Part 7: Training SVM with RBF Kernel (Dataset 3) =======
 
 
 ```python
@@ -192,7 +196,7 @@ visualizeBoundary(X, y, model)
 ###### 以上部分代码在[ex6.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex6/ex6.py)中
 
 ## Exercise 6 | Spam Classification with SVMs
-### ==================== Part 1: Email Preprocessing ====================
+### ================ Part 1: Email Preprocessing ================
 
 
 ```python
@@ -222,7 +226,7 @@ print(f' {word_indices}')
      [85, 915, 793, 1076, 882, 369, 1698, 789, 1821, 1830, 882, 430, 1170, 793, 1001, 1892, 1363, 591, 1675, 237, 161, 88, 687, 944, 1662, 1119, 1061, 1698, 374, 1161, 478, 1892, 1509, 798, 1181, 1236, 809, 1894, 1439, 1546, 180, 1698, 1757, 1895, 687, 1675, 991, 960, 1476, 70, 529, 1698, 530]
     
 
-### ==================== Part 2: Feature Extraction ====================
+### ================= Part 2: Feature Extraction =================
 
 
 ```python
@@ -252,7 +256,7 @@ print(f'Number of non-zero entries: {sum(features > 0)}')
     Number of non-zero entries: 45
     
 
-### =========== Part 3: Train Linear SVM for Spam Classification ========
+### ========= Part 3: Train Linear SVM for Spam Classification ======
 
 
 ```python
@@ -281,7 +285,7 @@ print(f'Training Accuracy: {(p == y).mean() * 100:f}')
     Training Accuracy: 99.825000
     
 
-### =================== Part 4: Test Spam Classification ================
+### ================ Part 4: Test Spam Classification =============
 
 
 ```python
@@ -302,7 +306,7 @@ print(f'Test Accuracy: {(p == ytest).mean() * 100:f}')
     Test Accuracy: 98.900000
     
 
-### ================= Part 5: Top Predictors of Spam ====================
+### ============= Part 5: Top Predictors of Spam ================
 
 
 ```python
@@ -334,7 +338,7 @@ for i in range(15):
      hour (0.246404) 
     
 
-### =================== Part 6: Try Your Own Emails =====================
+### =============== Part 6: Try Your Own Emails =================
 
 
 ```python

@@ -8,7 +8,8 @@ tags:
 last_modified_at: 2018-09-18T14:15:00+08:00
 ---
 ## Exercise 7 | Principle Component Analysis and K-Means Clustering
-### ================= Part 1: Find Closest Centroids ====================
+### ============= Part 1: Find Closest Centroids ================
+
 $$c^{(i)} = j, s.t. \min||x^{(i)} - \mu_j||^2$$
 
 
@@ -42,7 +43,8 @@ print('(the closest centroids should be 1, 3, 2 respectively)')
     (the closest centroids should be 1, 3, 2 respectively)
     
 
-### ===================== Part 2: Compute Means =========================
+### ================ Part 2: Compute Means ====================
+
 $$\mu_k = \frac{1}{|C_k|}\sum_{i\in C_k}{x^{(i)}}$$
 
 
@@ -72,7 +74,7 @@ print('   [ 7.119387 3.616684 ]')
        [ 7.119387 3.616684 ]
     
 
-### =================== Part 3: K-Means Clustering ======================
+### =============== Part 3: K-Means Clustering ==================
 
 
 ```python
@@ -129,7 +131,7 @@ print('K-Means Done.')
     K-Means Done.
     
 
-### ============= Part 4: K-Means Clustering on Pixels ===============
+### =========== Part 4: K-Means Clustering on Pixels =============
 
 
 ```python
@@ -178,7 +180,7 @@ centroids, idx = runkMeans(X, initial_centroids, max_iters)
     K-Means iteration 10/10...
     
 
-### ================= Part 5: Image Compression ======================
+### ============== Part 5: Image Compression ===================
 
 
 ```python
@@ -221,7 +223,7 @@ plt.show()
 ###### 以上部分代码在[ex7.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex7/ex7.py)中
 
 ## Exercise 7 | Principle Component Analysis and K-Means Clustering
-### ================== Part 1: Load Example Dataset  ===================
+### =============== Part 1: Load Example Dataset  ================
 
 
 ```python
@@ -250,8 +252,10 @@ plt.show()
 ![png](../images/machine-learning-ex7_files/machine-learning-ex7_12_1.png)
 
 
-### =============== Part 2: Principal Component Analysis ===============
+### ============ Part 2: Principal Component Analysis ============
+
 $$\Sigma = \frac{1}{m}X^TX$$
+
 $$[U, S, V] = svd(\Sigma)$$
 
 
@@ -294,7 +298,8 @@ print('\n(you should expect to see -0.707107 -0.707107)')
     (you should expect to see -0.707107 -0.707107)
     
 
-### =================== Part 3: Dimension Reduction ===================
+### ================ Part 3: Dimension Reduction ================
+
 $$z = U_{reduce}^Tx$$
 
 
@@ -339,7 +344,7 @@ plt.show()
 ![png](../images/machine-learning-ex7_files/machine-learning-ex7_16_1.png)
 
 
-### =============== Part 4: Loading and Visualizing Face Data =============
+### =========== Part 4: Loading and Visualizing Face Data =========
 
 
 ```python
@@ -361,7 +366,7 @@ _ = displayData(X[:100])
 ![png](../images/machine-learning-ex7_files/machine-learning-ex7_18_1.png)
 
 
-### =========== Part 5: PCA on Face Data: Eigenfaces  ===================
+### ======== Part 5: PCA on Face Data: Eigenfaces  ================
 
 
 ```python
@@ -388,7 +393,7 @@ _ = displayData(U.transpose()[:36])
 ![png](../images/machine-learning-ex7_files/machine-learning-ex7_20_1.png)
 
 
-### ============= Part 6: Dimension Reduction for Faces =================
+### ========= Part 6: Dimension Reduction for Faces =============
 
 
 ```python
@@ -405,7 +410,7 @@ print(f'The projected data Z has a size of: {Z.shape} ')
     The projected data Z has a size of: (5000, 100) 
     
 
-### ==== Part 7: Visualization of Faces after PCA Dimension Reduction ====
+### == Part 7: Visualization of Faces after PCA Dimension Reduction ==
 
 
 ```python
@@ -438,7 +443,7 @@ plt.show()
 ![png](../images/machine-learning-ex7_files/machine-learning-ex7_24_1.png)
 
 
-### === Part 8(a): Optional (ungraded) Exercise: PCA for Visualization ===
+### == Part 8(a): Optional (ungraded) Exercise: PCA for Visualization ==
 
 
 ```python
@@ -490,7 +495,7 @@ plt.show()
 ![png](../images/machine-learning-ex7_files/machine-learning-ex7_26_1.png)
 
 
-### === Part 8(b): Optional (ungraded) Exercise: PCA for Visualization ===
+### == Part 8(b): Optional (ungraded) Exercise: PCA for Visualization ==
 
 
 ```python

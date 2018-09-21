@@ -140,7 +140,7 @@ all_theta = oneVsAll(X, y, num_labels, lambda_)
 
 好了，应该都收敛了。
 
-### ================ Part 3: Predict for One-Vs-All ================
+### =============== Part 3: Predict for One-Vs-All ===============
 
 
 ```python

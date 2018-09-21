@@ -8,7 +8,7 @@ tags:
 last_modified_at: 2018-09-07T14:40:00+08:00
 ---
 ## Exercise 1: Linear Regression
-### ==================== Part 1: Basic Function ====================
+### ================== Part 1: Basic Function ==================
 
 
 ```python
@@ -33,7 +33,7 @@ warmUpExercise()
 
 
 
-### ======================= Part 2: Plotting =======================
+### ===================== Part 2: Plotting =====================
 
 
 ```python
@@ -55,8 +55,10 @@ plotData(np.array(X), np.array(y))
 ![png](../images/machine-learning-ex1_files/machine-learning-ex1_3_1.png)
 
 
-### =================== Part 3: Cost and Gradient descent ===================
-代价函数$$J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}{\left(h_\theta(x^{(i)}) - y^{(i)}\right)^2} = \frac{1}{2m}\left((X\theta - y)^T(X\theta - y)\right)$$
+### ============= Part 3: Cost and Gradient descent =============
+代价函数
+
+$$J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}{\left(h_\theta(x^{(i)}) - y^{(i)}\right)^2} = \frac{1}{2m}\left((X\theta - y)^T(X\theta - y)\right)$$
 
 
 ```python
@@ -92,7 +94,10 @@ print('Expected cost value (approx) 54.24')
     Expected cost value (approx) 54.24
     
 
-梯度下降$$\theta_j = \theta_j - \alpha\frac{\partial}{\partial\theta_j}J(\theta) = \theta_j - \alpha\frac{1}{m}\sum_{i=1}^{m}\left(h_\theta(x^{(i)}) - y^{(i)}\right)\cdot x_j^{(i)} = \theta_j - \alpha\frac{1}{m}(X\theta - y)^TX_j$$
+梯度下降
+
+$$\theta_j = \theta_j - \alpha\frac{\partial}{\partial\theta_j}J(\theta) = \theta_j - \alpha\frac{1}{m}\sum_{i=1}^{m}\left(h_\theta(x^{(i)}) - y^{(i)}\right)\cdot x_j^{(i)} = \theta_j - \alpha\frac{1}{m}(X\theta - y)^TX_j$$
+
 $$\theta = \theta - \alpha\frac{1}{m}\left(X^T(X\theta - y)\right)$$
 
 
@@ -190,7 +195,7 @@ plt.show()
 ###### 以上部分函数代码在[ex1.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex1/ex1.py)中
 
 ## Exercise 1: Linear regression with multiple variables
-### ================ Part 1: Feature Normalization ================
+### =============== Part 1: Feature Normalization ===============
 
 
 ```python
@@ -323,7 +328,9 @@ print(f'Predicted price of a 1650 sq-ft, 3 br house (using gradient descent):\n 
     
 
 ### ================ Part 3: Normal Equations ================
-正规方程的解$$\theta = \left(X^TX\right)^{-1}X^Ty$$
+正规方程的解
+
+$$\theta = \left(X^TX\right)^{-1}X^Ty$$
 
 
 ```python

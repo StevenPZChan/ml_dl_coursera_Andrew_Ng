@@ -3,4 +3,4 @@
 
 * Code with `octave`
 * Code with `python/jupyter notebook`
-* Updated to ml-ex1 by Sept.,2018
+* Updated to ml-ex8 by Sept.,2018
