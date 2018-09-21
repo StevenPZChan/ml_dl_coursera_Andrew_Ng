@@ -45,8 +45,16 @@ plt.show()
 
 
 ### ============ Part 2: Compute Cost and Gradient ============
-代价函数$$J(\theta) = \frac{1}{m}\sum_{i=1}^{m}{-y^{(i)}\log\left(h_\theta(x^{(i)})\right) - (1 - y^{(i)})\log\left(1 - h_\theta(x^{(i)})\right)} = -\frac{1}{m}\left(y^T\log\left(g(X\theta)\right) + (\vec{1} - y)^T\log\left(\vec{1} - g(X\theta)\right)\right)$$
-梯度$$\frac{\partial}{\partial\theta_j}J(\theta) = \frac{1}{m}\sum_{i=1}^{m}{\left(h_\theta(x^{(i)} - y^{(i)}\right)x_j^{(i)}}$$
+代价函数
+
+$$J(\theta) = \frac{1}{m}\sum_{i=1}^{m}{-y^{(i)}\log\left(h_\theta(x^{(i)})\right) - (1 - y^{(i)})\log\left(1 - h_\theta(x^{(i)})\right)}$$
+
+$$ = -\frac{1}{m}\left(y^T\log\left(g(X\theta)\right) + (\vec{1} - y)^T\log\left(\vec{1} - g(X\theta)\right)\right)$$
+
+梯度
+
+$$\frac{\partial}{\partial\theta_j}J(\theta) = \frac{1}{m}\sum_{i=1}^{m}{\left(h_\theta(x^{(i)} - y^{(i)}\right)x_j^{(i)}}$$
+
 $$\nabla J(\theta) = \frac{1}{m}X^T\left(g(X\theta - y)\right)$$
 
 
@@ -215,8 +223,14 @@ plt.show()
 
 
 ### =========== Part 1: Regularized Logistic Regression ============
-正则化的代价函数和梯度为$$J(\theta) = \frac{1}{m}\left[\sum_{i=1}^{m}{-y^{(i)}\log\left(h_\theta(x^{(i)})\right) - (1 - y^{(i)})\log\left(1 - h_\theta(x^{(i)})\right)} + \frac{\lambda}{2}\sum_{i=1}^{n}{\theta_j^2}\right] = -\frac{1}{m}\left(y^T\log\left(g(X\theta)\right) + (\vec{1} - y)^T\log\left(\vec{1} - g(X\theta)\right)\right) + \frac{\lambda}{2m}\theta^T\theta$$
+正则化的代价函数和梯度为
+
+$$J(\theta) = \frac{1}{m}\left[\sum_{i=1}^{m}{-y^{(i)}\log\left(h_\theta(x^{(i)})\right) - (1 - y^{(i)})\log\left(1 - h_\theta(x^{(i)})\right)} + \frac{\lambda}{2}\sum_{i=1}^{n}{\theta_j^2}\right]$$
+
+$$ = -\frac{1}{m}\left(y^T\log\left(g(X\theta)\right) + (\vec{1} - y)^T\log\left(\vec{1} - g(X\theta)\right)\right) + \frac{\lambda}{2m}\theta^T\theta$$
+
 $$\frac{\partial}{\partial\theta_j}J(\theta) = \frac{1}{m}\sum_{i=1}^{m}{\left(h_\theta(x^{(i)} - y^{(i)}\right)x_j^{(i)}} + \frac{\lambda}{m}\theta_j$$
+
 $$\nabla J(\theta) = \frac{1}{m}X^T\left(g(X\theta - y)\right) + \frac{\lambda}{m}\theta$$
 
 
@@ -280,7 +294,7 @@ print(' 0.3460\n 0.1614\n 0.1948\n 0.2269\n 0.0922')
      0.0922
     
 
-### ============= Part 2: Regularization and Accuracies =============
+### ============ Part 2: Regularization and Accuracies ============
 
 
 ```python

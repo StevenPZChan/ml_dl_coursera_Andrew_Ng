@@ -111,7 +111,7 @@ def nnCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels, X
         y_one_hot[i, y[i] - 1] = 1
 
     ones = np.ones_like(a3)
-    A = (np.matmul(y_one_hot.transpose(), np.log(a3)) + np.matmul((ones - y_one_hot).transpose(), np.log(ones - a3)))
+    A = np.matmul(y_one_hot.transpose(), np.log(a3)) + np.matmul((ones - y_one_hot).transpose(), np.log(ones - a3))
     J = -1 / m * A.trace()
     J += lambda_ / (2 * m) * (np.sum(Theta1[:, 1:] ** 2) + np.sum(Theta2[:, 1:] ** 2))
 
@@ -198,7 +198,7 @@ def checkNNGradients(lambda_ = 0):
     # Evaluate the norm of the difference between two solutions.
     # If you have a correct implementation, and assuming you used EPSILON = 0.0001
     # in computeNumericalGradient.m, then diff below should be less than 1e-9
-    diff = np.std(numgrad - grad) / np.std(numgrad + grad)
+    diff = np.linalg.norm(numgrad - grad) / np.linalg.norm(numgrad + grad)
 
     print('If your backpropagation implementation is correct, then \n'
           'the relative difference will be small (less than 1e-9). \n'

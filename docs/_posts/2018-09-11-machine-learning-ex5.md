@@ -45,7 +45,7 @@ plt.show()
 ![png](../images/machine-learning-ex5_files/machine-learning-ex5_1_1.png)
 
 
-### =========== Part 2: Regularized Linear Regression Cost =============
+### ========= Part 2: Regularized Linear Regression Cost ===========
 
 
 ```python
@@ -60,7 +60,7 @@ print(f'Cost at theta = [1 ; 1]: {J:f} '
     (this value should be about 303.993192)
     
 
-### =========== Part 3: Regularized Linear Regression Gradient =============
+### ======= Part 3: Regularized Linear Regression Gradient =========
 
 
 ```python
@@ -102,7 +102,7 @@ plt.show()
 ![png](../images/machine-learning-ex5_files/machine-learning-ex5_7_1.png)
 
 
-### =========== Part 5: Learning Curve for Linear Regression =============
+### ======== Part 5: Learning Curve for Linear Regression ==========
 
 
 ```python
@@ -202,7 +202,7 @@ for i in range(m):
 ![png](../images/machine-learning-ex5_files/machine-learning-ex5_9_1.png)
 
 
-### =========== Part 6: Feature Mapping for Polynomial Regression =============
+### ===== Part 6: Feature Mapping for Polynomial Regression =======
 
 
 ```python
@@ -234,7 +234,7 @@ print(f'  {X_poly[0, :]}  ')
       0.359835 -0.531091]  
     
 
-### =========== Part 7: Learning Curve for Polynomial Regression =============
+### ====== Part 7: Learning Curve for Polynomial Regression ========
 
 
 ```python
@@ -359,7 +359,7 @@ for i in range(m):
 ![png](../images/machine-learning-ex5_files/machine-learning-ex5_13_3.png)
 
 
-### =========== Part 8: Validation for Selecting Lambda =============
+### =========== Part 8: Validation for Selecting $$\lambda$$ =============
 
 
 ```python
