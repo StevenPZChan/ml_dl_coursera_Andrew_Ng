@@ -4,3 +4,4 @@
 * Code with `octave`
 * Code with `python/jupyter notebook`
 * Updated to ml-ex8 by Sept.,2018
+* Referred to `Deep Learning Honor Code`, codes for deep-learning exercises will not be publicly posted.
