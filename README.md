@@ -4,3 +4,4 @@
 * Code with `octave`
 * Code with `python/jupyter notebook`
 * Updated to ml-ex8 by Sept.,2018
+* Codes just for communication. No plagiarism!!
