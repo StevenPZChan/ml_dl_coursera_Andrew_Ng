@@ -1,11 +1,13 @@
 ex*data* filter=lfs diff=lfs merge=lfs -text
 convolutional-neural-networks/*/datasets/* filter=lfs diff=lfs merge=lfs -text
 convolutional-neural-networks/*/*/datasets/* filter=lfs diff=lfs merge=lfs -text
-deep-neural-network/*/*/datasets/* filter=lfs diff=lfs merge=lfs -text
+deep-neural-network/week5/Regularization/datasets/test_catvnoncat.h5 filter=lfs diff=lfs merge=lfs -text
+deep-neural-network/week5/Regularization/datasets/train_catvnoncat.h5 filter=lfs diff=lfs merge=lfs -text
+deep-neural-network/week5/Regularization/datasets/data.mat filter=lfs diff=lfs merge=lfs -text
 deep-neural-network/*/datasets/* filter=lfs diff=lfs merge=lfs -text
 nlp-sequence-models/*/*/models/* filter=lfs diff=lfs merge=lfs -text
 nlp-sequence-models/*/*/data/* filter=lfs diff=lfs merge=lfs -text
-neural-networks-deep-learning/Week[[:space:]]4/Deep[[:space:]]Neural[[:space:]]Network[[:space:]]Application_[[:space:]]Image[[:space:]]Classification/datasets/test_catvnoncat.h5 filter=lfs diff=lfs merge=lfs -text
-neural-networks-deep-learning/Week[[:space:]]4/Deep[[:space:]]Neural[[:space:]]Network[[:space:]]Application_[[:space:]]Image[[:space:]]Classification/datasets/train_catvnoncat.h5 filter=lfs diff=lfs merge=lfs -text
 neural-networks-deep-learning/Week[[:space:]]2/Logistic[[:space:]]Regression[[:space:]]as[[:space:]]a[[:space:]]Neural[[:space:]]Network/datasets/test_catvnoncat.h5 filter=lfs diff=lfs merge=lfs -text
 neural-networks-deep-learning/Week[[:space:]]2/Logistic[[:space:]]Regression[[:space:]]as[[:space:]]a[[:space:]]Neural[[:space:]]Network/datasets/train_catvnoncat.h5 filter=lfs diff=lfs merge=lfs -text
+neural-networks-deep-learning/Week[[:space:]]4/Deep[[:space:]]Neural[[:space:]]Network[[:space:]]Application_[[:space:]]Image[[:space:]]Classification/datasets/test_catvnoncat.h5 filter=lfs diff=lfs merge=lfs -text
+neural-networks-deep-learning/Week[[:space:]]4/Deep[[:space:]]Neural[[:space:]]Network[[:space:]]Application_[[:space:]]Image[[:space:]]Classification/datasets/train_catvnoncat.h5 filter=lfs diff=lfs merge=lfs -text
