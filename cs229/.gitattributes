@@ -1,0 +1,12 @@
+ps1/data/ds5_valid.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds1_valid.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds2_train.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds3_train.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds4_train.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds4_valid.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds5_train.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds1_train.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds2_valid.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds3_test.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds3_valid.csv filter=lfs diff=lfs merge=lfs -text
+ps1/data/ds5_test.csv filter=lfs diff=lfs merge=lfs -text
