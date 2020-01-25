@@ -42,7 +42,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex5_files/machine-learning-ex5_1_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex5_files/machine-learning-ex5_1_1.png)
 
 
 ### ========= Part 2: Regularized Linear Regression Cost ===========
@@ -99,7 +99,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex5_files/machine-learning-ex5_7_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex5_files/machine-learning-ex5_7_1.png)
 
 
 ### ======== Part 5: Learning Curve for Linear Regression ==========
@@ -199,7 +199,7 @@ for i in range(m):
     
 
 
-![png](../images/machine-learning-ex5_files/machine-learning-ex5_9_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex5_files/machine-learning-ex5_9_1.png)
 
 
 ### ===== Part 6: Feature Mapping for Polynomial Regression =======
@@ -275,7 +275,7 @@ for i in range(m):
     
 
 
-![png](../images/machine-learning-ex5_files/machine-learning-ex5_13_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex5_files/machine-learning-ex5_13_1.png)
 
 
     Optimization terminated successfully.
@@ -356,7 +356,7 @@ for i in range(m):
     
 
 
-![png](../images/machine-learning-ex5_files/machine-learning-ex5_13_3.png)
+![png]({{site.baseurl}}/images/machine-learning-ex5_files/machine-learning-ex5_13_3.png)
 
 
 ### =========== Part 8: Validation for Selecting $$\lambda$$ =============
@@ -440,7 +440,7 @@ for i in range(len(lambda_vec)):
     
 
 
-![png](../images/machine-learning-ex5_files/machine-learning-ex5_15_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex5_files/machine-learning-ex5_15_1.png)
 
 
 ### Computing test set error
@@ -512,7 +512,7 @@ plt.show()
 ```
 
 
-![png](../images/machine-learning-ex5_files/machine-learning-ex5_19_0.png)
+![png]({{site.baseurl}}/images/machine-learning-ex5_files/machine-learning-ex5_19_0.png)
 
 
 用了随机采样平均值之后曲线平滑了不少。

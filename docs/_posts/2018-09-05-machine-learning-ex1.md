@@ -52,7 +52,7 @@ plotData(np.array(X), np.array(y))
     
 
 
-![png](../images/machine-learning-ex1_files/machine-learning-ex1_3_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex1_files/machine-learning-ex1_3_1.png)
 
 
 ### ============= Part 3: Cost and Gradient descent =============
@@ -133,7 +133,7 @@ print(f'For population = 70,000, we predict a profit of {predict2*10000:f}')
     
 
 
-![png](../images/machine-learning-ex1_files/machine-learning-ex1_7_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex1_files/machine-learning-ex1_7_1.png)
 
 
     For population = 35,000, we predict a profit of 4519.767868
@@ -185,11 +185,11 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex1_files/machine-learning-ex1_9_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex1_files/machine-learning-ex1_9_1.png)
 
 
 
-![png](../images/machine-learning-ex1_files/machine-learning-ex1_9_2.png)
+![png]({{site.baseurl}}/images/machine-learning-ex1_files/machine-learning-ex1_9_2.png)
 
 
 ###### 以上部分函数代码在[ex1.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex1/ex1.py)中
@@ -274,7 +274,7 @@ print(f' {theta} ');
     
 
 
-![png](../images/machine-learning-ex1_files/machine-learning-ex1_15_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex1_files/machine-learning-ex1_15_1.png)
 
 
     Theta computed from gradient descent: 
@@ -298,7 +298,7 @@ plt.show()
 ```
 
 
-![png](../images/machine-learning-ex1_files/machine-learning-ex1_17_0.png)
+![png]({{site.baseurl}}/images/machine-learning-ex1_files/machine-learning-ex1_17_0.png)
 
 
 

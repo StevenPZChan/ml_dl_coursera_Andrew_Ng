@@ -125,7 +125,7 @@ print('K-Means Done.')
     
 
 
-![png](../images/machine-learning-ex7_files/machine-learning-ex7_5_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex7_files/machine-learning-ex7_5_1.png)
 
 
     K-Means Done.
@@ -217,7 +217,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex7_files/machine-learning-ex7_9_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex7_files/machine-learning-ex7_9_1.png)
 
 
 ###### 以上部分代码在[ex7.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex7/ex7.py)中
@@ -249,7 +249,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex7_files/machine-learning-ex7_12_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex7_files/machine-learning-ex7_12_1.png)
 
 
 ### ============ Part 2: Principal Component Analysis ============
@@ -289,7 +289,7 @@ print('\n(you should expect to see -0.707107 -0.707107)')
     
 
 
-![png](../images/machine-learning-ex7_files/machine-learning-ex7_14_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex7_files/machine-learning-ex7_14_1.png)
 
 
     Top eigenvector: 
@@ -341,7 +341,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex7_files/machine-learning-ex7_16_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex7_files/machine-learning-ex7_16_1.png)
 
 
 ### =========== Part 4: Loading and Visualizing Face Data =========
@@ -363,7 +363,7 @@ _ = displayData(X[:100])
     
 
 
-![png](../images/machine-learning-ex7_files/machine-learning-ex7_18_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex7_files/machine-learning-ex7_18_1.png)
 
 
 ### ======== Part 5: PCA on Face Data: Eigenfaces  ================
@@ -390,7 +390,7 @@ _ = displayData(U.transpose()[:36])
     
 
 
-![png](../images/machine-learning-ex7_files/machine-learning-ex7_20_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex7_files/machine-learning-ex7_20_1.png)
 
 
 ### ========= Part 6: Dimension Reduction for Faces =============
@@ -440,7 +440,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex7_files/machine-learning-ex7_24_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex7_files/machine-learning-ex7_24_1.png)
 
 
 ### == Part 8(a): Optional (ungraded) Exercise: PCA for Visualization ==
@@ -492,7 +492,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex7_files/machine-learning-ex7_26_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex7_files/machine-learning-ex7_26_1.png)
 
 
 ### == Part 8(b): Optional (ungraded) Exercise: PCA for Visualization ==
@@ -515,7 +515,7 @@ plt.show()
 ```
 
 
-![png](../images/machine-learning-ex7_files/machine-learning-ex7_28_0.png)
+![png]({{site.baseurl}}/images/machine-learning-ex7_files/machine-learning-ex7_28_0.png)
 
 
 ###### 以上部分代码在[ex7_pca.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex7/ex7_pca.py)中

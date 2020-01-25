@@ -31,7 +31,7 @@ plotData(X, y)
     
 
 
-![png](../images/machine-learning-ex6_files/machine-learning-ex6_1_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex6_files/machine-learning-ex6_1_1.png)
 
 
 ### ================ Part 2: Training Linear SVM ================
@@ -62,7 +62,7 @@ visualizeBoundaryLinear(X, y, model)
     
 
 
-![png](../images/machine-learning-ex6_files/machine-learning-ex6_3_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex6_files/machine-learning-ex6_3_1.png)
 
 
 ### ============ Part 3: Implementing Gaussian Kernel ============
@@ -109,7 +109,7 @@ plotData(X, y)
     
 
 
-![png](../images/machine-learning-ex6_files/machine-learning-ex6_7_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex6_files/machine-learning-ex6_7_1.png)
 
 
 ### ======= Part 5: Training SVM with RBF Kernel (Dataset 2) =======
@@ -142,7 +142,7 @@ visualizeBoundary(X, y, model)
     
 
 
-![png](../images/machine-learning-ex6_files/machine-learning-ex6_9_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex6_files/machine-learning-ex6_9_1.png)
 
 
 ### =============== Part 6: Visualizing Dataset 3 ================
@@ -165,7 +165,7 @@ plotData(X, y)
     
 
 
-![png](../images/machine-learning-ex6_files/machine-learning-ex6_11_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex6_files/machine-learning-ex6_11_1.png)
 
 
 ### ======= Part 7: Training SVM with RBF Kernel (Dataset 3) =======
@@ -190,7 +190,7 @@ visualizeBoundary(X, y, model)
 ```
 
 
-![png](../images/machine-learning-ex6_files/machine-learning-ex6_13_0.png)
+![png]({{site.baseurl}}/images/machine-learning-ex6_files/machine-learning-ex6_13_0.png)
 
 
 ###### 以上部分代码在[ex6.py](https://github.com/StevenPZChan/ml_dl_coursera_Andrew_Ng/blob/master/machine-learning-python/machine-learning-ex6/ex6.py)中

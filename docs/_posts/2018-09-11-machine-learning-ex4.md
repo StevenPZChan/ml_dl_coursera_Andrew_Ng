@@ -42,7 +42,7 @@ _ = displayData(X[sel, :])
     
 
 
-![png](../images/machine-learning-ex4_files/machine-learning-ex4_1_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex4_files/machine-learning-ex4_1_1.png)
 
 
 ### ================ Part 2: Loading Parameters ================
@@ -326,7 +326,7 @@ _ = displayData(Theta1[:, 1:])
     
 
 
-![png](../images/machine-learning-ex4_files/machine-learning-ex4_19_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex4_files/machine-learning-ex4_19_1.png)
 
 
 ### ================ Part 10: Implement Predict ================

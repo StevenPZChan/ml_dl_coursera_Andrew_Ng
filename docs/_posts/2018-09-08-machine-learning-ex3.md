@@ -38,7 +38,7 @@ _ = displayData(sel)
     
 
 
-![png](../images/machine-learning-ex3_files/machine-learning-ex3_1_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex3_files/machine-learning-ex3_1_1.png)
 
 
 ### ============ Part 2a: Vectorize Logistic Regression ============
@@ -186,7 +186,7 @@ _ = displayData(X[sel, :])
     
 
 
-![png](../images/machine-learning-ex3_files/machine-learning-ex3_11_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex3_files/machine-learning-ex3_11_1.png)
 
 
 ### ================ Part 2: Loading Pameters ================
@@ -243,7 +243,7 @@ for i in range(m):
     
 
 
-![png](../images/machine-learning-ex3_files/machine-learning-ex3_17_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex3_files/machine-learning-ex3_17_1.png)
 
 
     
@@ -253,7 +253,7 @@ for i in range(m):
     
 
 
-![png](../images/machine-learning-ex3_files/machine-learning-ex3_17_3.png)
+![png]({{site.baseurl}}/images/machine-learning-ex3_files/machine-learning-ex3_17_3.png)
 
 
     
@@ -263,7 +263,7 @@ for i in range(m):
     
 
 
-![png](../images/machine-learning-ex3_files/machine-learning-ex3_17_5.png)
+![png]({{site.baseurl}}/images/machine-learning-ex3_files/machine-learning-ex3_17_5.png)
 
 
     
@@ -273,7 +273,7 @@ for i in range(m):
     
 
 
-![png](../images/machine-learning-ex3_files/machine-learning-ex3_17_7.png)
+![png]({{site.baseurl}}/images/machine-learning-ex3_files/machine-learning-ex3_17_7.png)
 
 
     

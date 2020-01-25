@@ -30,27 +30,25 @@ layout: default
           {% include social-share.html %}
         {% endif %}
 
-<!-- Gitalk 评论 start  -->
-<!-- Link Gitalk 的支持文件  -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
-<div id="gitalk-container"></div>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-
-    // gitalk的主要参数
-		clientID: 'af32d761f04c3c90df20',
-		clientSecret: '898ba9f4f70488fe002a194b91111ef0578b8729',
-		repo: 'stevenpzchan.github.io',
-		owner: 'StevenPZChan',
-		admin: ['StevenPZChan'],
-		id: '{{ page.title }}',
-        distractionFreeMode: true,
-    
-    });
-    gitalk.render('gitalk-container');
-</script> 
-<!-- Gitalk end -->
+        <!-- Gitalk comment start  -->
+        <!-- Link Gitalk support  -->
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+        <div id="gitalk-container"></div>
+        <script type="text/javascript">
+          var gitalk = new Gitalk({
+            // gitalk main parameters
+            clientID: 'af32d761f04c3c90df20',
+            clientSecret: '898ba9f4f70488fe002a194b91111ef0578b8729',
+            repo: 'stevenpzchan.github.io',
+            owner: 'StevenPZChan',
+            admin: ['StevenPZChan'],
+            id: '{{ page.title }}',
+            distractionFreeMode: true,
+          });
+          gitalk.render('gitalk-container');
+        </script>
+        <!-- Gitalk end -->
 
         {% if site.disqus.shortname %}
           {% include disqus-comments.html %}

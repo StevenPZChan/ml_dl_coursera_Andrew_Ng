@@ -37,7 +37,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex8_files/machine-learning-ex8_1_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex8_files/machine-learning-ex8_1_1.png)
 
 
 ### =========== Part 2: Estimate the dataset statistics ============
@@ -71,7 +71,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex8_files/machine-learning-ex8_3_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex8_files/machine-learning-ex8_3_1.png)
 
 
 ### ================== Part 3: Find Outliers ===================
@@ -106,7 +106,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex8_files/machine-learning-ex8_5_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex8_files/machine-learning-ex8_5_1.png)
 
 
 ### ============= Part 4: Multidimensional Outliers ==============
@@ -184,7 +184,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex8_files/machine-learning-ex8_10_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex8_files/machine-learning-ex8_10_1.png)
 
 
 ### ========= Part 2: Collaborative Filtering Cost Function ========

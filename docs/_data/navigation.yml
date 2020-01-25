@@ -3,11 +3,11 @@
 - title: Home
   url: /
 - title: Categories
-  url: /categories
+  url: /categories/
 - title: Tags
-  url: /tags
+  url: /tags/
 - title: About
-  url: https://stevenpzchan.github.io/about
+  url: ../about/
 # - title: Search
 #   url: /search/
 # - title: External Page

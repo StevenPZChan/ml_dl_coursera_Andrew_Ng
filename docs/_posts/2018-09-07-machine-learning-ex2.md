@@ -41,7 +41,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex2_files/machine-learning-ex2_1_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex2_files/machine-learning-ex2_1_1.png)
 
 
 ### ============ Part 2: Compute Cost and Gradient ============
@@ -165,7 +165,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex2_files/machine-learning-ex2_5_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex2_files/machine-learning-ex2_5_1.png)
 
 
 ### ============== Part 4: Predict and Accuracies ==============
@@ -219,7 +219,7 @@ plt.show()
 ```
 
 
-![png](../images/machine-learning-ex2_files/machine-learning-ex2_9_0.png)
+![png]({{site.baseurl}}/images/machine-learning-ex2_files/machine-learning-ex2_9_0.png)
 
 
 ### =========== Part 1: Regularized Logistic Regression ============
@@ -341,7 +341,7 @@ print('Expected accuracy (with lambda = 1): 83.1 (approx)')
     
 
 
-![png](../images/machine-learning-ex2_files/machine-learning-ex2_13_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex2_files/machine-learning-ex2_13_1.png)
 
 
     Train Accuracy: 83.050847
@@ -426,7 +426,7 @@ plt.show()
     
 
 
-![png](../images/machine-learning-ex2_files/machine-learning-ex2_15_1.png)
+![png]({{site.baseurl}}/images/machine-learning-ex2_files/machine-learning-ex2_15_1.png)
 
 
 可以看到当$$\lambda = 0$$时迭代还没有收敛，并且决策边界变得很扭曲，说明没有经过正则化时出现了过拟合；<br>
