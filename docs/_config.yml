@@ -24,14 +24,14 @@ url: https://stevenpzchan.github.io # the base hostname & protocol for your site
 logo: /images/so-simple-site-logo.png # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: true # reading time estimates, e.g. true
-words_per_minute: 200 # 200
+words_per_minute: 60 # 200
 mathjax: true # MathJax equations, e.g. true
 google_fonts:
   - name: "Source Sans Pro"
     weights: "400,400i,700,700i"
   - name: "Lora"
     weights: "400,400i,700,700i"
-google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
+google_analytics: UA-156999811-1 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
   shortname: # Disqus shortname, e.g. "my_disqus_shortname"
 twitter:
